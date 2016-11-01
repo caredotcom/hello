@@ -1,4 +1,4 @@
 stage name:"Build and test"
 node {
-  echo "hello world';
+  echo "hello world";
 }
