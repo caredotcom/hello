@@ -1,6 +1,6 @@
 stage name:"Build and test"
 node{
-    git url: "https://github.com/caredotcom/hello"
+    checkout scm
     sh 'mvn clean package';
     archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
 }
