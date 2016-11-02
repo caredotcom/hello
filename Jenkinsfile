@@ -5,8 +5,8 @@ node{
     archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
 }
 
-if (env.BRANCH_NAME == 'master){
- echo 'In the master branch'
+if (env.BRANCH_NAME == 'someFeature'){
+ echo 'In the feature branch'
  stage name:"Special"
  node {
    echo 'I am special because I am master' 
