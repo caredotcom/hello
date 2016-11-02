@@ -9,6 +9,8 @@ stage name:"Deploy"
 node {
     echo 'Hello World'
     echo env.BUILD_NUMBER
+    def sourceFile = env.WORKSPACE+"/target/hello.war";
+    echo 'source is '+sourceFile;
 }
 
 
