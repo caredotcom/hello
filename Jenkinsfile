@@ -11,7 +11,7 @@ node {
     echo env.BUILD_NUMBER
     def sourceFile = env.WORKSPACE+"/target/hello.war";
     echo 'source is '+sourceFile;
-    def moveCommand = 'sudo mv '+sourceFile+' /usr/share/tomcat8/webapps/'
+    def moveCommand = 'mv '+sourceFile+' /usr/share/tomcat8/webapps/'
     sh moveCommand
 }
 
